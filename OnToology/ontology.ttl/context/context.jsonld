@@ -1,0 +1,699 @@
+{
+  "@context" : {
+    "OfficeWork" : {
+      "@id" : "https://w3id.org/timebank#OfficeWork"
+    },
+    "Level" : {
+      "@id" : "https://w3id.org/timebank#Level"
+    },
+    "isAvailableOn" : {
+      "@id" : "https://w3id.org/timebank#isAvailableOn",
+      "@type" : "@id"
+    },
+    "hasNotEnvironment" : {
+      "@id" : "https://w3id.org/timebank#hasNotEnvironment",
+      "@type" : "@id"
+    },
+    "Dishwashing" : {
+      "@id" : "https://w3id.org/timebank#Dishwashing"
+    },
+    "PsychoticEpisode" : {
+      "@id" : "https://w3id.org/timebank#PsychoticEpisode"
+    },
+    "DressingProblem" : {
+      "@id" : "https://w3id.org/timebank#DressingProblem"
+    },
+    "Sewing" : {
+      "@id" : "https://w3id.org/timebank#Sewing"
+    },
+    "hasEnvironment" : {
+      "@id" : "https://w3id.org/timebank#hasEnvironment",
+      "@type" : "@id"
+    },
+    "Baking" : {
+      "@id" : "https://w3id.org/timebank#Baking"
+    },
+    "PoorHearing" : {
+      "@id" : "https://w3id.org/timebank#PoorHearing"
+    },
+    "FoodService" : {
+      "@id" : "https://w3id.org/timebank#FoodService"
+    },
+    "Cleaning" : {
+      "@id" : "https://w3id.org/timebank#Cleaning"
+    },
+    "isAdressPartOf" : {
+      "@id" : "https://w3id.org/timebank#isAdressPartOf",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "isSubPartOf" : {
+      "@id" : "https://w3id.org/timebank#isSubPartOf",
+      "@type" : "@id"
+    },
+    "isSkillOf" : {
+      "@id" : "https://w3id.org/timebank#isSkillOf",
+      "@type" : "@id"
+    },
+    "Astate" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Astate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "excludesUserByLimitation" : {
+      "@id" : "https://w3id.org/timebank#excludesUserByLimitation",
+      "@type" : "@id"
+    },
+    "Request" : {
+      "@id" : "https://w3id.org/timebank#Request"
+    },
+    "Writing" : {
+      "@id" : "https://w3id.org/timebank#Writing"
+    },
+    "isNotEnvironmentOf" : {
+      "@id" : "https://w3id.org/timebank#isNotEnvironmentOf",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "WeatherConstraint" : {
+      "@id" : "https://w3id.org/timebank#WeatherConstraint"
+    },
+    "Hypertension" : {
+      "@id" : "https://w3id.org/timebank#Hypertension"
+    },
+    "Afull" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Afull",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isRepeatingEndpointOf" : {
+      "@id" : "https://w3id.org/timebank#isRepeatingEndpointOf",
+      "@type" : "@id"
+    },
+    "Rheumatism" : {
+      "@id" : "https://w3id.org/timebank#Rheumatism"
+    },
+    "DayOfWeek" : {
+      "@id" : "http://www.w3.org/2006/time#DayOfWeek"
+    },
+    "DurationDescription" : {
+      "@id" : "http://www.w3.org/2006/time#DurationDescription"
+    },
+    "isAccreditedTo" : {
+      "@id" : "https://w3id.org/timebank#isAccreditedTo",
+      "@type" : "@id"
+    },
+    "PhysicallyDisabledCare" : {
+      "@id" : "https://w3id.org/timebank#PhysicallyDisabledCare"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "AddressPart" : {
+      "@id" : "https://w3id.org/timebank#AddressPart"
+    },
+    "Asuburb" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Asuburb",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Dogs" : {
+      "@id" : "https://w3id.org/timebank#Dogs"
+    },
+    "SalesService" : {
+      "@id" : "https://w3id.org/timebank#SalesService"
+    },
+    "Acountry" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Acountry",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasAccreditedDuration" : {
+      "@id" : "https://w3id.org/timebank#hasAccreditedDuration",
+      "@type" : "@id"
+    },
+    "Assembling" : {
+      "@id" : "https://w3id.org/timebank#Assembling"
+    },
+    "hasSkillLevel" : {
+      "@id" : "https://w3id.org/timebank#hasSkillLevel",
+      "@type" : "@id"
+    },
+    "isAcceptedBy" : {
+      "@id" : "https://w3id.org/timebank#isAcceptedBy",
+      "@type" : "@id"
+    },
+    "isSkillLevelOf" : {
+      "@id" : "https://w3id.org/timebank#isSkillLevelOf",
+      "@type" : "@id"
+    },
+    "Transportation" : {
+      "@id" : "https://w3id.org/timebank#Transportation"
+    },
+    "FinancialAdvice" : {
+      "@id" : "https://w3id.org/timebank#FinancialAdvice"
+    },
+    "Tailoring" : {
+      "@id" : "https://w3id.org/timebank#Tailoring"
+    },
+    "hasSkill" : {
+      "@id" : "https://w3id.org/timebank#hasSkill",
+      "@type" : "@id"
+    },
+    "Instant" : {
+      "@id" : "http://www.w3.org/2006/time#Instant"
+    },
+    "requiresSkill" : {
+      "@id" : "https://w3id.org/timebank#requiresSkill",
+      "@type" : "@id"
+    },
+    "WalkingProblem" : {
+      "@id" : "https://w3id.org/timebank#WalkingProblem"
+    },
+    "EggAllergy" : {
+      "@id" : "https://w3id.org/timebank#EggAllergy"
+    },
+    "WoodCarving" : {
+      "@id" : "https://w3id.org/timebank#WoodCarving"
+    },
+    "DrivingCars" : {
+      "@id" : "https://w3id.org/timebank#DrivingCars"
+    },
+    "Acity" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Acity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "HouseholdEquipmentRepair" : {
+      "@id" : "https://w3id.org/timebank#HouseholdEquipmentRepair"
+    },
+    "ComputerRepair" : {
+      "@id" : "https://w3id.org/timebank#ComputerRepair"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isOriginatorOf" : {
+      "@id" : "https://w3id.org/timebank#isOriginatorOf",
+      "@type" : "@id"
+    },
+    "isCancelledOn" : {
+      "@id" : "https://w3id.org/timebank#isCancelledOn",
+      "@type" : "@id"
+    },
+    "Adistrict" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Adistrict",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SickCare" : {
+      "@id" : "https://w3id.org/timebank#SickCare"
+    },
+    "SensitiveSkin" : {
+      "@id" : "https://w3id.org/timebank#SensitiveSkin"
+    },
+    "User" : {
+      "@id" : "https://w3id.org/timebank#User"
+    },
+    "isAcceptanceDateOf" : {
+      "@id" : "https://w3id.org/timebank#isAcceptanceDateOf",
+      "@type" : "@id"
+    },
+    "Aplace" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Aplace",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isSeverityOf" : {
+      "@id" : "https://w3id.org/timebank#isSeverityOf",
+      "@type" : "@id"
+    },
+    "accepts" : {
+      "@id" : "https://w3id.org/timebank#accepts",
+      "@type" : "@id"
+    },
+    "Mowing" : {
+      "@id" : "https://w3id.org/timebank#Mowing"
+    },
+    "LimitedAccessibilityRain" : {
+      "@id" : "https://w3id.org/timebank#LimitedAccessibilityRain"
+    },
+    "Repair" : {
+      "@id" : "https://w3id.org/timebank#Repair"
+    },
+    "GlutenAllergy" : {
+      "@id" : "https://w3id.org/timebank#GlutenAllergy"
+    },
+    "isPublishedOn" : {
+      "@id" : "https://w3id.org/timebank#isPublishedOn",
+      "@type" : "@id"
+    },
+    "SlipperyFloor" : {
+      "@id" : "https://w3id.org/timebank#SlipperyFloor"
+    },
+    "isEnvironmentOf" : {
+      "@id" : "https://w3id.org/timebank#isEnvironmentOf",
+      "@type" : "@id"
+    },
+    "endsRepeatingOn" : {
+      "@id" : "https://w3id.org/timebank#endsRepeatingOn",
+      "@type" : "@id"
+    },
+    "Status" : {
+      "@id" : "https://w3id.org/timebank#Status"
+    },
+    "CraftingClothes" : {
+      "@id" : "https://w3id.org/timebank#CraftingClothes"
+    },
+    "Diabetes" : {
+      "@id" : "https://w3id.org/timebank#Diabetes"
+    },
+    "Depression" : {
+      "@id" : "https://w3id.org/timebank#Depression"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "RecordingNotes" : {
+      "@id" : "https://w3id.org/timebank#RecordingNotes"
+    },
+    "FearOfDark" : {
+      "@id" : "https://w3id.org/timebank#FearOfDark"
+    },
+    "Limitation" : {
+      "@id" : "https://w3id.org/timebank#Limitation"
+    },
+    "Mopping" : {
+      "@id" : "https://w3id.org/timebank#Mopping"
+    },
+    "excludesUserFrom" : {
+      "@id" : "https://w3id.org/timebank#excludesUserFrom",
+      "@type" : "@id"
+    },
+    "MentalDisorder" : {
+      "@id" : "https://w3id.org/timebank#MentalDisorder"
+    },
+    "HygieneAssitance" : {
+      "@id" : "https://w3id.org/timebank#HygieneAssitance"
+    },
+    "ElderlyCare" : {
+      "@id" : "https://w3id.org/timebank#ElderlyCare"
+    },
+    "Aconscriptionnumber" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Aconscriptionnumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Lift" : {
+      "@id" : "https://w3id.org/timebank#Lift"
+    },
+    "OnlineShopping" : {
+      "@id" : "https://w3id.org/timebank#OnlineShopping"
+    },
+    "Astreet" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Astreet",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasLimitation" : {
+      "@id" : "https://w3id.org/timebank#hasLimitation",
+      "@type" : "@id"
+    },
+    "NutsAllergy" : {
+      "@id" : "https://w3id.org/timebank#NutsAllergy"
+    },
+    "isCompletedOn" : {
+      "@id" : "https://w3id.org/timebank#isCompletedOn",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "isLimitationOf" : {
+      "@id" : "https://w3id.org/timebank#isLimitationOf",
+      "@type" : "@id"
+    },
+    "Water" : {
+      "@id" : "https://w3id.org/timebank#Water"
+    },
+    "Ahousename" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Ahousename",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "DancingCompanion" : {
+      "@id" : "https://w3id.org/timebank#DancingCompanion"
+    },
+    "Sports" : {
+      "@id" : "https://w3id.org/timebank#Sports"
+    },
+    "hasAddressPart" : {
+      "@id" : "https://w3id.org/timebank#hasAddressPart",
+      "@type" : "@id"
+    },
+    "Electricity" : {
+      "@id" : "https://w3id.org/timebank#Electricity"
+    },
+    "PoorEyesight" : {
+      "@id" : "https://w3id.org/timebank#PoorEyesight"
+    },
+    "SpeakingProblem" : {
+      "@id" : "https://w3id.org/timebank#SpeakingProblem"
+    },
+    "isTimeBalanceOf" : {
+      "@id" : "https://w3id.org/timebank#isTimeBalanceOf",
+      "@type" : "@id"
+    },
+    "PhoneCalls" : {
+      "@id" : "https://w3id.org/timebank#PhoneCalls"
+    },
+    "StrokeHistory" : {
+      "@id" : "https://w3id.org/timebank#StrokeHistory"
+    },
+    "DrivingTrucks" : {
+      "@id" : "https://w3id.org/timebank#DrivingTrucks"
+    },
+    "hasStatus" : {
+      "@id" : "https://w3id.org/timebank#hasStatus",
+      "@type" : "@id"
+    },
+    "WoodCrafting" : {
+      "@id" : "https://w3id.org/timebank#WoodCrafting"
+    },
+    "HeartDisease" : {
+      "@id" : "https://w3id.org/timebank#HeartDisease"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "isStatusOf" : {
+      "@id" : "https://w3id.org/timebank#isStatusOf",
+      "@type" : "@id"
+    },
+    "EventPlanning" : {
+      "@id" : "https://w3id.org/timebank#EventPlanning"
+    },
+    "Plumbing" : {
+      "@id" : "https://w3id.org/timebank#Plumbing"
+    },
+    "Counseling" : {
+      "@id" : "https://w3id.org/timebank#Counseling"
+    },
+    "Crafting" : {
+      "@id" : "https://w3id.org/timebank#Crafting"
+    },
+    "MilkAllergy" : {
+      "@id" : "https://w3id.org/timebank#MilkAllergy"
+    },
+    "CognitiveImpairment" : {
+      "@id" : "https://w3id.org/timebank#CognitiveImpairment"
+    },
+    "ProperInterval" : {
+      "@id" : "http://www.w3.org/2006/time#ProperInterval"
+    },
+    "FoodAllergy" : {
+      "@id" : "https://w3id.org/timebank#FoodAllergy"
+    },
+    "FearOfCats" : {
+      "@id" : "https://w3id.org/timebank#FearOfCats"
+    },
+    "Aprovince" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Aprovince",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "HairCutting" : {
+      "@id" : "https://w3id.org/timebank#HairCutting"
+    },
+    "Apostcode" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Apostcode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EnvironmentalAllergy" : {
+      "@id" : "https://w3id.org/timebank#EnvironmentalAllergy"
+    },
+    "Ahousenumber" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Ahousenumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SeafoodAllergy" : {
+      "@id" : "https://w3id.org/timebank#SeafoodAllergy"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Pruning" : {
+      "@id" : "https://w3id.org/timebank#Pruning"
+    },
+    "isAcceptedOn" : {
+      "@id" : "https://w3id.org/timebank#isAcceptedOn",
+      "@type" : "@id"
+    },
+    "Supplies" : {
+      "@id" : "https://w3id.org/timebank#Supplies"
+    },
+    "hasOriginator" : {
+      "@id" : "https://w3id.org/timebank#hasOriginator",
+      "@type" : "@id"
+    },
+    "Recreation" : {
+      "@id" : "https://w3id.org/timebank#Recreation"
+    },
+    "DrivingHeavyVehicles" : {
+      "@id" : "https://w3id.org/timebank#DrivingHeavyVehicles"
+    },
+    "PerformingMusic" : {
+      "@id" : "https://w3id.org/timebank#PerformingMusic"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Knitting" : {
+      "@id" : "https://w3id.org/timebank#Knitting"
+    },
+    "MentallyIllCare" : {
+      "@id" : "https://w3id.org/timebank#MentallyIllCare"
+    },
+    "CommonDisease" : {
+      "@id" : "https://w3id.org/timebank#CommonDisease"
+    },
+    "repeatsOn" : {
+      "@id" : "https://w3id.org/timebank#repeatsOn",
+      "@type" : "@id"
+    },
+    "FearOfAnimals" : {
+      "@id" : "https://w3id.org/timebank#FearOfAnimals"
+    },
+    "Environment" : {
+      "@id" : "https://w3id.org/timebank#Environment"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "LegalAdvice" : {
+      "@id" : "https://w3id.org/timebank#LegalAdvice"
+    },
+    "isRequiredBy" : {
+      "@id" : "https://w3id.org/timebank#isRequiredBy",
+      "@type" : "@id"
+    },
+    "isCompletionDateOf" : {
+      "@id" : "https://w3id.org/timebank#isCompletionDateOf",
+      "@type" : "@id"
+    },
+    "TravelCompanion" : {
+      "@id" : "https://w3id.org/timebank#TravelCompanion"
+    },
+    "hasSeverity" : {
+      "@id" : "https://w3id.org/timebank#hasSeverity",
+      "@type" : "@id"
+    },
+    "Accessibility" : {
+      "@id" : "https://w3id.org/timebank#Accessibility"
+    },
+    "PhysicalInconvenience" : {
+      "@id" : "https://w3id.org/timebank#PhysicalInconvenience"
+    },
+    "Skill" : {
+      "@id" : "https://w3id.org/timebank#Skill"
+    },
+    "isTimeWindowOf" : {
+      "@id" : "https://w3id.org/timebank#isTimeWindowOf",
+      "@type" : "@id"
+    },
+    "DrivingWithTrailers" : {
+      "@id" : "https://w3id.org/timebank#DrivingWithTrailers"
+    },
+    "SpecificPhobia" : {
+      "@id" : "https://w3id.org/timebank#SpecificPhobia"
+    },
+    "FearOfHeights" : {
+      "@id" : "https://w3id.org/timebank#FearOfHeights"
+    },
+    "Catering" : {
+      "@id" : "https://w3id.org/timebank#Catering"
+    },
+    "UnevenTerrain" : {
+      "@id" : "https://w3id.org/timebank#UnevenTerrain"
+    },
+    "Tools" : {
+      "@id" : "https://w3id.org/timebank#Tools"
+    },
+    "isCancellationDateOf" : {
+      "@id" : "https://w3id.org/timebank#isCancellationDateOf",
+      "@type" : "@id"
+    },
+    "Hypotension" : {
+      "@id" : "https://w3id.org/timebank#Hypotension"
+    },
+    "DrugAllergy" : {
+      "@id" : "https://w3id.org/timebank#DrugAllergy"
+    },
+    "ChildCare" : {
+      "@id" : "https://w3id.org/timebank#ChildCare"
+    },
+    "hasExpectedDuration" : {
+      "@id" : "https://w3id.org/timebank#hasExpectedDuration",
+      "@type" : "@id"
+    },
+    "hasTimeWindow" : {
+      "@id" : "https://w3id.org/timebank#hasTimeWindow",
+      "@type" : "@id"
+    },
+    "Asubdistrict" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Asubdistrict",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Advice" : {
+      "@id" : "https://w3id.org/timebank#Advice"
+    },
+    "ClimbingStairsDifficulty" : {
+      "@id" : "https://w3id.org/timebank#ClimbingStairsDifficulty"
+    },
+    "FearOfDogs" : {
+      "@id" : "https://w3id.org/timebank#FearOfDogs"
+    },
+    "PersonalService" : {
+      "@id" : "https://w3id.org/timebank#PersonalService"
+    },
+    "ComputerProcessing" : {
+      "@id" : "https://w3id.org/timebank#ComputerProcessing"
+    },
+    "Ahamlet" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Ahamlet",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Cooking" : {
+      "@id" : "https://w3id.org/timebank#Cooking"
+    },
+    "AccessibleByPublicTransport" : {
+      "@id" : "https://w3id.org/timebank#AccessibleByPublicTransport"
+    },
+    "hasSubPart" : {
+      "@id" : "https://w3id.org/timebank#hasSubPart",
+      "@type" : "@id"
+    },
+    "Cats" : {
+      "@id" : "https://w3id.org/timebank#Cats"
+    },
+    "isAvailabilityOf" : {
+      "@id" : "https://w3id.org/timebank#isAvailabilityOf",
+      "@type" : "@id"
+    },
+    "isPublicationDateOf" : {
+      "@id" : "https://w3id.org/timebank#isPublicationDateOf",
+      "@type" : "@id"
+    },
+    "Pets" : {
+      "@id" : "https://w3id.org/timebank#Pets"
+    },
+    "MobilityProblem" : {
+      "@id" : "https://w3id.org/timebank#MobilityProblem"
+    },
+    "hasTimeBalance" : {
+      "@id" : "https://w3id.org/timebank#hasTimeBalance",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "rating" : {
+      "@id" : "https://w3id.org/timebank#rating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "ElectronicRepair" : {
+      "@id" : "https://w3id.org/timebank#ElectronicRepair"
+    },
+    "AutomobileRepair" : {
+      "@id" : "https://w3id.org/timebank#AutomobileRepair"
+    },
+    "Allergy" : {
+      "@id" : "https://w3id.org/timebank#Allergy"
+    },
+    "isRepetitionDayOf" : {
+      "@id" : "https://w3id.org/timebank#isRepetitionDayOf",
+      "@type" : "@id"
+    },
+    "Games" : {
+      "@id" : "https://w3id.org/timebank#Games"
+    },
+    "LimitedAccessibilitySnow" : {
+      "@id" : "https://w3id.org/timebank#LimitedAccessibilitySnow"
+    },
+    "DrivingVans" : {
+      "@id" : "https://w3id.org/timebank#DrivingVans"
+    },
+    "ClothesWashing" : {
+      "@id" : "https://w3id.org/timebank#ClothesWashing"
+    },
+    "Carpeting" : {
+      "@id" : "https://w3id.org/timebank#Carpeting"
+    },
+    "Internet" : {
+      "@id" : "https://w3id.org/timebank#Internet"
+    },
+    "Stairs" : {
+      "@id" : "https://w3id.org/timebank#Stairs"
+    },
+    "Groceries" : {
+      "@id" : "https://w3id.org/timebank#Groceries"
+    },
+    "FoodPreparation" : {
+      "@id" : "https://w3id.org/timebank#FoodPreparation"
+    },
+    "TransportationAvailable" : {
+      "@id" : "https://w3id.org/timebank#TransportationAvailable"
+    },
+    "InventoryManagement" : {
+      "@id" : "https://w3id.org/timebank#InventoryManagement"
+    },
+    "Maintenance" : {
+      "@id" : "https://w3id.org/timebank#Maintenance"
+    },
+    "DrivingTractors" : {
+      "@id" : "https://w3id.org/timebank#DrivingTractors"
+    },
+    "DrivingLightVehicles" : {
+      "@id" : "https://w3id.org/timebank#DrivingLightVehicles"
+    },
+    "ToiletUsingProblem" : {
+      "@id" : "https://w3id.org/timebank#ToiletUsingProblem"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "PeopleCare" : {
+      "@id" : "https://w3id.org/timebank#PeopleCare"
+    },
+    "DressingAssistance" : {
+      "@id" : "https://w3id.org/timebank#DressingAssistance"
+    },
+    "Aflats" : {
+      "@id" : "http://linkedgeodata.org/ontology/addr%3Aflats",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isExpectedDurationOf" : {
+      "@id" : "https://w3id.org/timebank#isExpectedDurationOf",
+      "@type" : "@id"
+    }
+  }
+}
