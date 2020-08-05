@@ -2,20 +2,16 @@
 <rdf:RDF xmlns="https://w3id.org/timebank#"
      xml:base="https://w3id.org/timebank"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-     xmlns:ns1="https://creativecommons.org/ns#"
+     xmlns:ns="https://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/timebank">
         <owl:versionIRI rdf:resource="https://w3id.org/timebank/0.3"/>
-        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <dc:title>Timebank Ontology</dc:title>
         <terms:created>2020-08-05</terms:created>
         <terms:creator>Ankit Tibrewal</terms:creator>
@@ -28,7 +24,7 @@
         <vann:preferredNamespaceUri>https://w3id.org/timebank</vann:preferredNamespaceUri>
         <rdfs:comment>An ontology to describe poeple and requests for timebanks. This includes the poeple&apos;s skills, limitations, and environment.</rdfs:comment>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</owl:versionInfo>
-        <ns1:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
     </owl:Ontology>
     
 
@@ -1076,6 +1072,13 @@ A way with highway=* or a square with place=square and the corresponding name sh
 
 
     <owl:Class rdf:about="http://www.w3.org/2006/time#ProperInterval"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
     
 
 

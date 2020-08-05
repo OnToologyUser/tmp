@@ -1,6 +1,5 @@
 <https://w3id.org/timebank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/timebank> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/timebank/0.3> .
-<https://w3id.org/timebank> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
 <https://w3id.org/timebank> <http://purl.org/dc/elements/1.1/title> "Timebank Ontology" .
 <https://w3id.org/timebank> <http://purl.org/dc/terms/created> "2020-08-05" .
 <https://w3id.org/timebank> <http://purl.org/dc/terms/creator> "Ankit Tibrewal" .
@@ -654,6 +653,9 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # http://www.w3.org/2006/time#ProperInterval
 <http://www.w3.org/2006/time#ProperInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/timebank#Accessibility
 <https://w3id.org/timebank#Accessibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
